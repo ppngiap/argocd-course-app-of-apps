@@ -1,0 +1,20 @@
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: app2-00
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+spec: 
+  destination: 
+    namespace: dcp
+    server: "https://kubernetes.default.svc"
+  project: default
+  source: 
+    path: guestbook
+    repoURL: "https://github.com/ppngiap/argocd-example-apps.git"
+    targetRevision: master
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
