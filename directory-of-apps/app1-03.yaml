@@ -2,13 +2,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: app2-00
+  name: app1-03
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "5"
+    argocd.argoproj.io/sync-wave: "6"
 spec: 
   destination: 
-    namespace: app2-00 
+    namespace: app1-03 
     server: "https://kubernetes.default.svc"
   project: dcp
   source: 

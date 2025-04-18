@@ -5,7 +5,7 @@ metadata:
   name: app5-06
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "5"
+    argocd.argoproj.io/sync-wave: "2"
 spec: 
   destination: 
     namespace: app5-06 
