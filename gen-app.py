@@ -19,6 +19,9 @@ spec:
     repoURL: "https://github.com/ppngiap/argocd-example-apps.git"
     targetRevision: master
   syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
     syncOptions:
       - CreateNamespace=true
 """
