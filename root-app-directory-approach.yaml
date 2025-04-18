@@ -17,7 +17,7 @@ spec:
     jsonPointers:
     - /status
     kind: Application
-  project: default
+  project: dcp
   source:
     path: directory-of-apps
     repoURL: https://github.com/ppngiap/argocd-course-app-of-apps.git

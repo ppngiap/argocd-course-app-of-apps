@@ -8,9 +8,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "0"
 spec: 
   destination: 
-    namespace: dcp
+    namespace: app0-00 
     server: "https://kubernetes.default.svc"
-  project: default
+  project: dcp
   source: 
     path: guestbook
     repoURL: "https://github.com/ppngiap/argocd-example-apps.git"
